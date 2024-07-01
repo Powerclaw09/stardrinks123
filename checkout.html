@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="checkout">
+<form
+name="checkout"
+class="hello"
+action= "https://formspree.io/f/mpwaagpg" method="POST">
+ email <input type="email" placeholder="email..." name="email" required id="email">
+ Address <input type="address" placeholder="address..." name="address" required id="address">
+Product<input type="product" placeholder="product...">
+<input type="submit" required onclick="refresh()">
+<script>
+    alert('We are of on wensday')
+    alert("READ THIS : if you are not live in bellaire we won't be able to deliver to you.")
+    console.log("function for aleart")
+    function refresh(){
+        document.checkout.submit();
+        document.checkout.reset();
+    }
+</script>
+</form>
+</body>
+</html>
